@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+::selection {
+  background: #fa08;
+  color: #000;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+
+html,
+body {
+  height: 100%;
+  background: #333;
+}
+
+body {
+  background: linear-gradient(0deg,#b18753,#dc8a8a);
+  background-size: cover;
+  margin: 0;
+  overflow: hidden;
+}
+
+.main {
+  height: 100%;
+  position: relative;
+  font-size: calc(0.5vw + 2vh);
+}
+
+.box {
+  width: 50%;
+  height: calc(56% + 100px);
+  background: linear-gradient(180deg,#5d595b,#959fa0);
+  border-radius: 10px;
+  padding: 3vh;
+  border: solid;
+  overflow: auto;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.block {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 2%;
+  font-size: 2rem;
+}
+
+
+label {
+  display: block;
+  margin-top: 2%;
+  color: #fff;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  padding: 2% 7%;
+  border-radius: 20px;
+  border: solid #fff 3px;
+  background: #46af2f;
+  color: #fff;
+  font-size: calc(0.5vw + 1.5vh);
+  transition: 0.2s;
+}
+
+input:is([type="text"], [type="number"]):focus {
+  background: #d47e3c;
+}
+
+input[type="submit"] {
+  background: #2251c5;
+  width: 50%;
+  cursor: pointer;
+  box-shadow: #000 0 0 5px 0;
+  transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: #cc8b22;
+  box-shadow: #000 0 0 15px 0;
+}
+
+input[type="submit"]:active {
+  background: #f00;
+  box-shadow: #000 0 0 30px 5px,
+              inset #000 0 0 2vw 0
+  ;
+}
+.block._2 {
+  position: absolute;
+  width: 90%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+}
+
+img.icon {
+  width: calc(7vw + 15vh);
+  display: block;
+  margin: auto;
+}
+
+input.delete {
+  background: #f00;
+  width: 40%;
+}
+
+input.delete:hover {
+  background: #ad0f0f;
+}
+
+input.delete:active {
+  background: #4a0707;
+}
+
+input.cancel {
+  background: #555;
+  width: 40%;
+}
+
+input.cancel:hover {
+  background: #2d2b2b;
+}
+
+input.cancel:active {
+  background: #100f0f;
+}
+
+
+
+@media (orientation: portrait),
+       (max-width: 800px) {
+  .box {
+    width: 90%;
+    height: 90%;
+    font-size: 1.5rem;
+    padding-top: 1%;
+  }
+
+  input {
+    font-size: 1.5rem
+  }
+
+  .block {
+    display: block;
+    width: 96%;
+    margin-top: 5%;
+    float: none !important;
+  }
+
+  input[type="submit"] {
+    margin-top: 4%;
+    width: 100%;
+  }
+}
