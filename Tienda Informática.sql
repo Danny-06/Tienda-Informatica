@@ -5,7 +5,7 @@ CREATE TABLE productos (
   id INT NOT NULL,
   nombre VARCHAR(50) NOT NULL,
   nombreArchivo VARCHAR(50) NOT NULL,
-  precio INT NOT NULL,
+  precio INT NOT NULL
 
   PRIMARY KEY(id)
 )
@@ -36,6 +36,13 @@ VALUES
 
 
 
-CREATE TABLE (
+CREATE TABLE registro (
+  id INT NOT NULL,
+  idProducto INT NOT NULL,
+  nombreProducto VARCHAR(20) NOT NULL,
+  precioProducto INT NOT NULL,
+  cantidadProducto INT NOT NULL,
 
+  PRIMARY KEY(id, idProducto),
+  FOREIGN KEY (idProducto) REFERENCES productos(id)
 )
