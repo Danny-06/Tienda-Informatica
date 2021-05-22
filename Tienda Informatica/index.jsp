@@ -1,6 +1,7 @@
 
 <%@page import="java.util.HashMap"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
 
@@ -112,9 +113,9 @@
       <form class="form" action="">
         <div class="block">
           <!--label>Usuario</label-->
-          <input name="user" class="user" type="text" required autofocus placeholder="Nombre de Usuario">
+          <input name="user" class="user" type="text" required autofocus autocomplete="0ff" placeholder="Nombre de Usuario">
           <!--label>Contraseña</label-->
-          <input name="password" class="password" type="password" required placeholder="Contraseña" no-pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$">
+          <input name="password" class="password" type="password" autocomplete="off" required placeholder="Contraseña" no-pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$">
         </div>
         <input class="submit" type="submit">
       </form>
