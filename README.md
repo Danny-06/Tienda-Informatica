@@ -21,13 +21,18 @@ Para iniciar sesión se hace usando el único usuario que se proporciona
 <img src="Capturas/login root.png">
 <br>
 
+2. Cuando iniciemos sesión acabaremos en la página principal,
+<br>Y si intentamos volver a la página de Login, se nos redirigirá de nuevo aquí.
+<br>A la izquierda tenemos el panel laterl donde podremos ver los productos que tenemos
+<br>en el carrito, ahora mismo no hay nada y esa información nos la indica con un mensaje,
+<br>además tambien se nos permite acceder a los registros de las compras ya realizadas anteriormente
 <img src="Capturas/session sin carrito.png">
 <br>
 
-<img src="Capturas/session con carrito.png">
+<img src="Capturas/agregaProducto.png">
 <br>
 
-<img src="Capturas/agregaProducto.png">
+<img src="Capturas/session con carrito.png">
 <br>
 
 <img src="Capturas/table.png">
