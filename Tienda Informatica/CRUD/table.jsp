@@ -80,6 +80,7 @@
                           if( request.getParameter("reset") != null ) {
                           if( request.getParameter("reset").equals("true") ) {
                             session.invalidate();
+                            response.sendRedirect("/Tienda Informatica/index.jsp");
                           }
                           }
 

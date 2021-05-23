@@ -28,6 +28,7 @@
       if( request.getParameter("reset") != null ) {
       if( request.getParameter("reset").equals("true") ) {
         session.invalidate();
+        response.sendRedirect("/Tienda Informatica/index.jsp");
       }
       }
       
@@ -51,7 +52,7 @@
 
       // Si alguno de los parámetros es nulo se redireccionará a la página principal
       if( !PARAMS_NOT_NULL ) {
-        response.sendRedirect("/Tienda Informatica/index.jsp");
+        response.sendRedirect("/Tienda Informatica/session.jsp");
       }
 
   %>
