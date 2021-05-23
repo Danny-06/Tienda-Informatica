@@ -35,7 +35,7 @@ Para iniciar sesión se hace usando el único usuario que se proporciona:
 <img src="Capturas/agregaProducto.png">
 <br>
 
-4. Una vez tenemos los productos que deseamos en el carrito le damos a "TERMINAR COMPRA".
+4. Una vez tenemos los productos que deseamos en el carrito, le damos a "TERMINAR COMPRA".
 <img src="Capturas/session con carrito.png">
 <br>
 
