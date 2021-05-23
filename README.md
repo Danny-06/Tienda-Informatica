@@ -43,5 +43,5 @@ Para iniciar sesión se hace usando el único usuario que se proporciona:
 <br>las compras hechas anteriormente y la que acabamos de hacer.
 <br>Desde aquí tambien podemos borrar los registros que ya no queramos
 <br>tener almacenados.
-<strong>Elimninado la fila de un registro se eliminará el registro entero.</strong>
+<br><strong>Eliminando la fila de un registro se eliminará el registro entero.</strong>
 <img src="Capturas/table.png">
