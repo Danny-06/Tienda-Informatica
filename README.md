@@ -13,16 +13,21 @@ En está aplicación podrás ir seleccionando productos a tu gusto de los listad
 <br><br>
 <img src="Capturas/login.png">
 <br>
+
 Para iniciar sesión se hace usando el único usuario que se proporciona
 <br><strong>Usuario:</strong>    root
 <br><strong>Contraseña:</strong> root
 <br><br>
 <img src="Capturas/login root.png">
 <br>
+
 <img src="Capturas/session sin carrito.png">
 <br>
+
 <img src="Capturas/session con carrito.png">
 <br>
+
 <img src="Capturas/agregaProducto.png">
 <br>
+
 <img src="Capturas/table.png">
