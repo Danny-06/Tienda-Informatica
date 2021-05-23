@@ -79,7 +79,8 @@
                           // 'reset=true'
                           if( request.getParameter("reset") != null ) {
                           if( request.getParameter("reset").equals("true") ) {
-                            session.invalidate();
+                            session.removeAttribute("user");
+                            session.removeAttribute("password");
                             response.sendRedirect("/Tienda Informatica/index.jsp");
                           }
                           }
