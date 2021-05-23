@@ -14,6 +14,24 @@
     
     try {
     
+    
+      // Comprobar si hay un usuario almacenado en la sessionStorage
+      // Si no lo hay, redirigir a la página de 'Login' siempre
+      // que intente acceder a esta página
+      if( session.getAttribute("user") == null ) {
+        response.sendRedirect("/Tienda Informatica/index.jsp");
+      }
+      
+    
+      // Destrucción de la sesión mediante la introducción de un parametro en la URL
+      // 'reset=true'
+      if( request.getParameter("reset") != null ) {
+      if( request.getParameter("reset").equals("true") ) {
+        session.invalidate();
+      }
+      }
+      
+
       // Array que contiene los parametros que se envían a través del formulario
       String[] params = {
         request.getParameter("nameProduct"),
