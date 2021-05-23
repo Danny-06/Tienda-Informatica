@@ -30,8 +30,8 @@ Para iniciar sesión se hace usando el único usuario que se proporciona
 <br>
 
 3. Si hacemos click en alguno de los productos anteriores acabaremos en esta página donde podremos
-<br>seleccionar la cantidad deseada del producto desde 1 hasta 99.d
-<img src="Capturas/agregaProducto.png">
+<br>seleccionar la cantidad deseada del producto desde 1 hasta 99.
+<img src="Capturas/agregaProduct.png">
 <br>
 
 <img src="Capturas/session con carrito.png">
