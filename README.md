@@ -45,5 +45,5 @@ Para iniciar sesión se hace usando el único usuario que se proporciona:
 <br>tener almacenados.
 <br>
 <br><strong>Eliminando la fila de un registro se eliminará el registro entero.</strong>
-<br>
+<br><br>
 <img src="Capturas/table.png">
