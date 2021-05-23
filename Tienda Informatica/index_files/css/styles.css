@@ -41,7 +41,7 @@ body {
   width:  var(--myContainer_Width);
   height: var(--myContainer_Height);
   min-height: 350px;
-  --Color: #72d9b5;
+  --Color: #9de2de;
   --X_Offset:    0px;
   --Y_Offset:    0px;
   --Blur:       20px;
@@ -53,6 +53,7 @@ body {
                0px 0px
                30px 0px;
   background: linear-gradient(90deg,#9e7db0,#eb8080);
+  background: linear-gradient(90deg,#452c52,#173148);
   border: solid calc(0.2vw + 0.4vh) #121537;
   border-radius: calc(1.2vw + 0.8vh);
 }
@@ -116,9 +117,11 @@ input.password {
   --gradient-opacity_B: 0%;
 
   background: linear-gradient( 90deg,hsl(0deg, 73%, 71%, var(--gradient-opacity_A) ), hsl( 314deg, 59%, 43%, var(--gradient-opacity_B) ) );
+  background: linear-gradient( 90deg,hsl(190deg, 43%, 51%, var(--gradient-opacity_A) ), hsl( 280deg, 59%, 63%, var(--gradient-opacity_B) ) );
   color: #fff;
   border: none;
   border-bottom: solid #00ffcd 4px;
+  border-bottom: solid #1c68c3 4px;
   border-radius: 2rem;
 
   transition: --gradient-opacity_A 0.6s, --gradient-opacity_B 0.6s;
@@ -140,7 +143,9 @@ input.submit {
   cursor: pointer;
   border-radius: 10px;
   border: solid 4px #976bab;
+  border: solid 4px #563475;
   background: #ca9bbf;
+  background: #43115a;
   color: #fff;
   box-shadow: #000 0 0 20px 0;
   --t: 0.5s;
@@ -152,17 +157,23 @@ input.submit {
 
 input.submit:hover {
   border-color: #541e5f;
+  border-color: #865790;
   background: #af2d90;
+  background: #9a0b79;
   color: #000;
-  box-shadow: #000 0 0 20px 5px;
+  box-shadow: #0009 0 0 20px 5px;
 }
 
 input.submit:active {
   border-color: #291e2b;
+  border-color: #440a36;
   background: #631650;
+  background: #b31a4f;
   color: #000;
-  box-shadow: #000 0 0 20px 10px,
-        inset #000 0 0 20px 0;
+  box-shadow: #0009 0 0 10px 10px,
+        inset #0009 0 0 10px 0;
+  box-shadow: #fff9 0 0 10px 10px,
+        inset #fff9 0 0 10px 0;
 
   --t: 0.1s;
   transition: border-color  var(--t),
