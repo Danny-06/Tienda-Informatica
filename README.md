@@ -13,4 +13,4 @@ En está aplicación podrás ir seleccionando productos a tu gusto de los listad
 <img src="Capturas/session sin carrito.png">
 <img src="Capturas/session con carrito.png">
 <img src="Capturas/agregaProducto.png">
-<img src="Capturas/table.png">
+<img src="Capturas/">
