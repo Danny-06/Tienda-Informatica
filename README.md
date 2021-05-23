@@ -10,12 +10,13 @@ En está aplicación podrás ir seleccionando productos a tu gusto de los listad
 
 <br>
 1. Página de Login y única página accesible mientras no se inicie la sesión.
+<br>
 <img src="Capturas/login.png">
 <br>
 Para iniciar sesión se hace usando el único usuario que se proporciona
 <br><strong>Usuario:</strong>    root
 <br><strong>Contraseña:</strong> root
-<br>
+<br><br>
 <img src="Capturas/login root.png">
 <br>
 <img src="Capturas/session sin carrito.png">
