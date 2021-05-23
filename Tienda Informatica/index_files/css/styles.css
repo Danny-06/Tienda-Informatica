@@ -38,6 +38,7 @@ body {
 }
 
 .myContainer {
+  user-select: none;
   width:  var(--myContainer_Width);
   height: var(--myContainer_Height);
   min-height: 350px;
