@@ -8,7 +8,7 @@ En está aplicación podrás ir seleccionando productos a tu gusto de los listad
 <br>te redireccionará y donde podrás consultar y eliminar los registros anteriores.
 
 <img src="Capturas/login.png">
-<img src="Capturas/login root">
+<img src="Capturas/login root.png">
 <img src="Capturas/session sin carrito.png">
 <img src="Capturas/session con carrito.png">
 <img src="Capturas/agregaProducto.png">
