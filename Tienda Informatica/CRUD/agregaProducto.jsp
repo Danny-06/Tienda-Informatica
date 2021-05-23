@@ -122,7 +122,7 @@
             <!--<input name="imgProductFileName"   type="hidden" value="<%= request.getParameter("imgProductFileName") %>">-->
             <input name="priceSubmit"              type="hidden" value="<%= request.getParameter("price") %>">
            
-            <input name="quantitySubmit" autofocus id="quantity" type="text" value="1" autocomplete="off" required maxlength="2" pattern="[1-90-9]{1,2}?" placeholder="Introduce la cantidad del producto que desea">
+            <input name="quantitySubmit" autofocus id="quantity" type="text" value="1" autocomplete="off" required maxlength="2" pattern="[1-9][0-9]?" placeholder="Introduce la cantidad del producto que desea">
             <input id="submit" type="submit" value="Enviar">
          </div>
          </form>
