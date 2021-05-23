@@ -131,7 +131,7 @@
                             DATOS_COMPRA_SESION = DATOS_COMPRA_SESION
                             + "("
 
-                            + (lastIdResult + 1)                             + ", " // ID Registro
+                            + (lastIdResult + 1)                          + ", " // ID Registro
                             + ((String[])session.getAttribute(nombre))[0] + ", " // ID Producto
                             + "'" + nombre + "'"                          + ", " // Nombre Producto
                             + ((String[])session.getAttribute(nombre))[1] + ", " // Precio Producto
