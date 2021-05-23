@@ -110,11 +110,11 @@
 
 
                           // Obtener el número registros para definir la ID del siguiente Registro
-                          ResultSet COUNT = s.executeQuery("SELECT COUNT(DISTINCT id) FROM registro ORDER by id");
+                          ResultSet lastID = s.executeQuery("SELECT id FROM registro");
                           
-                          int resultCount = 0;
-                          while( COUNT.next() ) {
-                            resultCount = COUNT.getInt(1);
+                          int lastIdResult = 0;
+                          while( lastID.next() ) {
+                            lastIdResult = lastID.getInt(1);
                           }
 
 
@@ -131,7 +131,7 @@
                             DATOS_COMPRA_SESION = DATOS_COMPRA_SESION
                             + "("
 
-                            + (resultCount + 1)                             + ", " // ID Registro
+                            + (lastIdResult + 1)                             + ", " // ID Registro
                             + ((String[])session.getAttribute(nombre))[0] + ", " // ID Producto
                             + "'" + nombre + "'"                          + ", " // Nombre Producto
                             + ((String[])session.getAttribute(nombre))[1] + ", " // Precio Producto
@@ -160,7 +160,7 @@ console.log(`%cComando resultante para el borrado de los datos en la Base de Dat
 %c<%= deleteGroupID %>
 `, "color: #ff0", "")
 
-console.log("%cGRUPO DE REGISTROS: %c<%= resultCount %>", "color: #ff0", "")
+console.log("%cÚltima ID registrada en la tabla 'registro': %c<%= lastIdResult %>", "color: #ff0", "")
   
 console.log("%cSession User: "     + "%c<%= session.getAttribute("user") %>", "color: #ff0", "")
 console.log("%cSession Password: " + "%c<%= session.getAttribute("password") %>", "color: #ff0", "")
