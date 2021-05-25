@@ -86,13 +86,6 @@
                           }
 
 
-                          // Comprobar si hay un usuario almacenado en la sessionStorage
-                          // Si no lo hay, redirigir a la página de 'Login' siempre
-                          // que intente acceder a esta página
-                          if( session.getAttribute("user") == null ) {
-                            response.sendRedirect("/Tienda Informatica/index.jsp");
-                          }
-
                           Class.forName("com.mysql.jdbc.Driver");
                           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/tienda", "phpmyadmin", "1234");
 
