@@ -1,6 +1,8 @@
 # Tienda Informática
 CRUD para la asignatura de programación hecha con JSP
 
+Enlace al video explicativo del CRUD en Youtube: https://www.youtube.com/watch?v=h7By-z-g2yA
+
 
 En está aplicación podrás ir seleccionando productos a tu gusto de los listados,
 <br>mientras se van agregando al carrito.
