@@ -103,7 +103,7 @@
 
 
                           // Obtener el número registros para definir la ID del siguiente Registro
-                          ResultSet lastID = s.executeQuery("SELECT id FROM registro");
+                          ResultSet lastID = s.executeQuery("SELECT id FROM registro ORDER BY id");
                           
                           int lastIdResult = 0;
                           while( lastID.next() ) {
