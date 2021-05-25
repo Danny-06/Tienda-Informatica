@@ -51,11 +51,11 @@ CREATE TABLE registro (
 INSERT INTO registro
 VALUES
 
-(1, 1,  'Televisión',      630,  1),
-(1, 9,  'Tablet',          200,  2),
-(2, 6,  'Cascos',          10,  1),
-(2, 14, 'Memoria Ram',     500,  4),
+(1, 1,  'Televisión',      630,   1),
+(1, 9,  'Tablet',          200,   2),
+(2, 6,  'Cascos',          10,    1),
+(2, 14, 'Memoria Ram',     500,   4),
 (3, 13, 'Procesador',      1000,  2),
-(3, 16, 'Reloj Avanzado',  60, 10),
-(3, 15, 'Disco SSD',       790,  7),
-(4, 10, 'Altavoces',       50,  5)
+(3, 16, 'Reloj Avanzado',  60,   10),
+(3, 15, 'Disco SSD',       790,   7),
+(4, 10, 'Altavoces',       50,    5)
