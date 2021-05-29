@@ -45,9 +45,9 @@
       </nav>
       <div class="main">
           <aside class="panelLeft">
-            
+
             <%
-              
+
               // Comprobar si hay un usuario almacenado en la sessionStorage
               // Si no lo hay, redirigir a la página de 'Login' siempre
               // que intente acceder a esta página
@@ -65,16 +65,16 @@
                 response.sendRedirect("/Tienda Informatica/index.jsp");
               }
               }
-             
-              
-              
+
+
+
               String[] carritoArray = {
                 request.getParameter("idProductSubmit"),
                 request.getParameter("nameProductSubmit"),
                 request.getParameter("priceSubmit"),
                 request.getParameter("quantitySubmit")
               };
-              
+
               boolean CARRITO_NOT_NULL = true;
 
               // Comprobar si alguno de los parámetros del carrito es nulo
@@ -84,7 +84,7 @@
                   break;
                 }
               }
-              
+
               String productID = "";
               String productName = "";
               String productPrice = "";
@@ -97,17 +97,17 @@
                 productName = carritoArray[1];
                 productPrice = carritoArray[2];
                 productQuantity = carritoArray[3];
-                
+
                 session.setAttribute( productName, new String[]{ productID, productPrice, productQuantity } );
               }
               }
-              
+
 
               // Eliminar producto de la sesión
               if( request.getParameter("deleteProduct") != null ) {
                 session.removeAttribute( request.getParameter("deleteProduct") );
               }
-      
+
             %>
 
             
@@ -134,7 +134,7 @@
             <a href="table.jsp">
              <div class="itemPanel submitProducts">
               TERMINAR COMPRA
-            </div>
+             </div>
             </a>
             
             <%
@@ -173,7 +173,7 @@
            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/tienda", "phpmyadmin", "1234");
 
            Statement s = conexion.createStatement();
-           ResultSet productosSQL = s.executeQuery ("SELECT * FROM productos");
+           ResultSet productosSQL = s.executeQuery ("SELECT * FROM producto");
 
 
            // Lista de productos 
