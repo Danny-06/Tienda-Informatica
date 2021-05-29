@@ -104,7 +104,7 @@
 
                           // Obtener el número registros para definir la ID del siguiente Registro
                           ResultSet lastID = s.executeQuery("SELECT id FROM registro ORDER BY id");
-                          
+
                           int lastIdResult = 0;
                           while( lastID.next() ) {
                             lastIdResult = lastID.getInt(1);
@@ -126,8 +126,6 @@
 
                             + (lastIdResult + 1)                          + ", " // ID Registro
                             + ((String[])session.getAttribute(nombre))[0] + ", " // ID Producto
-                            + "'" + nombre + "'"                          + ", " // Nombre Producto
-                            + ((String[])session.getAttribute(nombre))[1] + ", " // Precio Producto
                             + ((String[])session.getAttribute(nombre))[2]        // Cantidad Producto
 
                             + ")," + "\n"
@@ -181,7 +179,7 @@ console.log("%cSession Attributes: "+ "%c<%= Collections.list( session.getAttrib
 
                         <%
                           // Mostrar consulta de la Base de Datos
-                          ResultSet registroSQL = s.executeQuery ("SELECT * FROM registro");
+                          ResultSet registroSQL = s.executeQuery ("SELECT * FROM registro r JOIN producto p ON (r.idProducto = p.id)");
                           while( registroSQL.next() ) {
                         %>
                         
@@ -193,10 +191,10 @@ console.log("%cSession Attributes: "+ "%c<%= Collections.list( session.getAttrib
                               </div>
                               <div class="col"> <%= registroSQL.getString("id") %> </div>
                               <div class="col"> <%= registroSQL.getString("idProducto") %> </div>
-                              <div class="col"> <%= registroSQL.getString("nombreProducto") %> </div>
-                              <div class="col"> <%= registroSQL.getString("precioProducto") %>€ </div>
+                              <div class="col"> <%= registroSQL.getString("nombre") %> </div>
+                              <div class="col"> <%= registroSQL.getString("precio") %>€ </div>
                               <div class="col"> <%= registroSQL.getString("cantidadProducto") %> </div>
-                              <div class="col"> <%= Integer.parseInt( registroSQL.getString("precioProducto") ) * Integer.parseInt( registroSQL.getString("cantidadProducto") ) %>€ </div>
+                              <div class="col"> <%= Integer.parseInt( registroSQL.getString("precio") ) * Integer.parseInt( registroSQL.getString("cantidadProducto") ) %>€ </div>
                           </div>
                         
                         <%
